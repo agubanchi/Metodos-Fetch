@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css">
+    <script src="index.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Api Fetch</title>
+  </head>
+
+  <body>
+    <h1>Ejercicio Metodos Fetch</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mx-auto" >
+    <button type="button" class="add" data-bs-toggle="modal" data-bs-target="#addModal" >Agregar nuevo usuario</button>
+  </div>
+  </div>
+</div>
+
+    <section id="userContainer">
+
+
+      <!-- Modal edit -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="editModalLabel">Editar usuario:</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div id="formEdit" class="col-md-8 form">
+
+          <label for="image">Avatar:</label>
+          <input id="image" type="text" placeholder="ingrese una url para su imagen"></input>
+
+          <label for="name">Nombre: </label>
+          <input id="name" type="text" placeholder="ingrese un nombre para su publicacion"></input>
+      
+          <label for="email">Email: </label>
+          <input id="email" type="text" placeholder="ingrese un email para su publicacion"></input>
+
+          <label for="address">Direccion: </label>
+          <input id="address" type="text" placeholder="ingrese una direccion  para su publicacion"></input>
+
+          
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="saveEdit">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <!-- Modal add -->
+     <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addModalLabel">Agregar nuevo usuario:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            <div id="formulario" class="col-md-8 form">
+    
+              <label for="image">Avatar:</label>
+              <input id="addimage" type="text" placeholder="ingrese una url para su imagen"></input>
+    
+              <label for="name">Nombre: </label>
+              <input id="addname" type="text" placeholder="ingrese un nombre para su publicacion"></input>
+          
+              <label for="email">Email: </label>
+              <input id="addemail" type="text" placeholder="ingrese un email para su publicacion"></input>
+    
+              <label for="address">Direccion: </label>
+              <input id="addaddress" type="text" placeholder="ingrese una direccion  para su publicacion"></input>
+    
+              
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="saveUser">Crear Usuario</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    </section>
+    
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+</html>

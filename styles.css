@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  background-color: #272727;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+
+#cardsContent,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 270px;
+  margin-top: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.modal-title {
+  text-align: center;
+  color: #272727;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #9ecef6;
+  background-color: #409de9;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: #199a76;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 0.9em;
+  line-height: 30px;
+  text-align: center;
+  color: #407be9;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 30px;
+  text-align: center;
+  color: #199a76;
+}
+
+p {
+  margin-top: 10px;
+  font-weight: 600;
+  background-color: #199a76;
+  border-radius: 8px;
+  padding: 8px;
+  color: #fff;
+}
+
+.button_content {
+  display: inline-block;
+  text-align: center;
+}
+
+.delete {
+  background-color: rgb(175, 38, 38);
+}
+
+.edit {
+  background-color: rgb(38, 141, 175);
+}
+
+.add {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(38, 175, 74);
+  text-align: center;
+  margin: 30px 30px;
+}
+
+button {
+  width: 6em;
+  border: none;
+  border-radius: 5px;
+  background-color: #409de9;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
